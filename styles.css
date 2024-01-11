@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/*defines the items in the grid*/
+.item1 { grid-area: header;}
+.item2 { grid-area: pic1;}
+.item3 { grid-area: pic2;}
+/*Grid container defines the sizes of each cell and otehr things like font,color,height,width etc */
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header'
+    'pic1 pic1 pic1 pic2';
+    grid-template-rows: 200px 300px;
+    width: 800px;
+    height: 500px;
+    color: rgb(56, 54, 54);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+/*grid item defines the characteristics for items inside grid*/
+.grid-item {
+    border: 1px solid #000;
+    padding: 0px;
+    text-align: center;
+}
+
+.header {
+    background-color: #FF9999;
+    grid-column: span 4;
+}
+
+.yellow-bg {
+    background-color: yellow;
+}
+
+.grey-bg {
+    background-color: #ECECFB;
+}
